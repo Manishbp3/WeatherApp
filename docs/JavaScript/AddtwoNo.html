@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        First Number : <br>
+        <input type="text" id="text1">
+        <br>
+        Second Number : <br>
+        <input type="text" id="text2">
+        <br>
+        Result : <br>
+        <input type="text" id="res">
+        <br>
+        <input type="button" value="Adding" onclick="addnumber()">
+        <input type="button" value="Subtraction" onclick="subtractnumber()">
+        <input type="button" value="MUltiplication" onclick="multiplaynumber()">
+        <input type="button" value="Division" onclick="divinumber()">
+    </div>
+    <script>
+        function addnumber()
+        {
+            var f_num = parseInt(document.getElementById("text1").value);
+            console.log(f_num);
+            var s_num = parseInt(document.getElementById("text2").value);
+            console.log(s_num);
+            var sum =f_num+s_num;
+
+            console.log(sum);
+            document.getElementById("res").value = sum;
+        }
+        function subtractnumber()
+        {
+            var f_num = parseInt(document.getElementById("text1").value);
+            console.log(f_num);
+            var e_num = parseInt(document.getElementById("text2").value);
+            console.log(e_num);
+            var sum =f_num-e_num;
+
+            console.log(sum);
+            document.getElementById("res").value = sum;
+        }
+        function multiplaynumber()
+        {
+            var f_num = parseInt(document.getElementById("text1").value);
+            console.log(f_num);
+            var m_num = parseInt(document.getElementById("text2").value);
+            console.log(m_num);
+            var sum =f_num*m_num;
+
+            console.log(sum);
+            document.getElementById("res").value = sum;
+        }
+        function divinumber()
+        {
+            var f_num = parseInt(document.getElementById("text1").value);
+            console.log(f_num);
+            var d_num = parseInt(document.getElementById("text2").value);
+            console.log(d_num);
+            var sum =f_num/d_num;
+            
+            console.log(sum);
+            document.getElementById("res").value = sum;
+        }
+
+    </script>
+</body>
+</html>
